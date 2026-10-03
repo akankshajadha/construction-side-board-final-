@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Screen Top Header Title -->
+        <div class="title" id="board-title">CONSTRUCTION BOARD</div>
+
+        <!-- Automatic Edge Separation Box Line Container -->
+        <div class="datetime-block">
+            <span id="live-date-box">DATE:--/--/----</span>
+            <span id="live-time-box">TIME:--:--:-- --</span>
+        </div>
+
+        <!-- Grid Matrix Layout Block Container -->
+        <div class="grid-table">
+            
+            <!-- Table Row Header Strip -->
+            <div class="grid-header">
+                <div class="col-1 border-right">PARAMETER</div>
+                <div class="col-2 border-right">COUNT</div>
+                <div class="col-3">UNIT</div>
+            </div>
+
+            <!-- Temperature Metrics Row Data -->
+            <div class="grid-row">
+                <div class="col-1 label-cell border-right">TEMPERATURE</div>
+                <div class="col-2 value-cell border-right" id="temp-val">--.-</div>
+                <div class="col-3 unit-cell">&deg;C</div>
+            </div>
+
+            <!-- Humidity Metrics Row Data -->
+            <div class="grid-row">
+                <div class="col-1 label-cell border-right">HUMIDITY</div>
+                <div class="col-2 value-cell border-right" id="hum-val">--</div>
+                <div class="col-3 unit-cell">%</div>
+            </div>
+
+            <!-- PM2.5 Metrics Row Data -->
+            <div class="grid-row">
+                <div class="col-1 label-cell border-right">PM2.5</div>
+                <div class="col-2 value-cell border-right" id="pm25-val">--</div>
+                <div class="col-3 unit-cell">&mu;g/m&sup3;</div>
+            </div>
+
+            <!-- PM10 Metrics Row Data -->
+            <div class="grid-row">
+                <div class="col-1 label-cell border-right">PM10</div>
+                <div class="col-2 value-cell border-right" id="pm10-val">--</div>
+                <div class="col-3 unit-cell">&mu;g/m&sup3;</div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
