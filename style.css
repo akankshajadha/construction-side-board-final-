@@ -15,7 +15,7 @@ body {
     padding: 1px;
 }
 
-/* Outer frame border converted to white */
+/* White Outer Frame Box Pattern */
 .main-container {
     width: 100%;
     height: 100%;
@@ -27,7 +27,7 @@ body {
 
 .title {
     color: #00ffff;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 900;
     text-align: center;
     padding: 2px 0;
@@ -36,7 +36,6 @@ body {
     white-space: nowrap;
 }
 
-/* Flex layout automatically handles the massive center gap between elements */
 .datetime-block {
     background: #000000;
     padding: 3px 4px;
@@ -44,7 +43,7 @@ body {
     display: flex;
     justify-content: space-between; 
     color: #ffffff;
-    font-size: 7.5px; 
+    font-size: 6.5px; 
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
@@ -56,7 +55,7 @@ body {
     flex-grow: 1;
 }
 
-/* Horizontal grid lines changed to solid white */
+/* White Horizontal Border Lines */
 .grid-header, .grid-row {
     display: flex;
     width: 100%;
@@ -80,35 +79,35 @@ body {
     border-bottom: none;
 }
 
-.col-1 { width: 52%; text-align: left; padding-left: 2px; height: 100%; display: flex; align-items: center; }
+/* CHANGED TO justify-content: center TO ALIGN TEMPERATURE/HUMIDITY IN THE CENTER */
+.col-1 { width: 52%; height: 100%; display: flex; align-items: center; justify-content: center; }
 .col-2 { width: 22%; text-align: center; height: 100%; display: flex; align-items: center; justify-content: center; }
 .col-3 { width: 26%; text-align: center; height: 100%; display: flex; align-items: center; justify-content: center; }
 
-/* Vertical column border lines changed to solid white */
+/* White Vertical Border Lines */
 .border-right {
     border-right: 1px solid #ffffff; 
 }
 
 .label-cell {
-    color: #ff6600; 
-    font-size: 8.5px; 
-    /* font-weight: bold; */
+    color: #ff3333; 
+    font-size: 5.5px; 
+    font-weight: bold;
     letter-spacing: -0.2px;
 }
 
 .value-cell {
     color: #00ff00; 
     font-size: 9px;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 .unit-cell {
     color: #ff6600; 
-    font-size: 8.5px;
-    /* font-weight: bold; */
+    font-size: 6.5px;
+    font-weight: bold;
 }
 
-/* Offline state switches to high-contrast red warning borders */
 body.offline-mode .main-container { border-color: #ff0000; }
 body.offline-mode .title { color: #ff0000; }
 body.offline-mode .datetime-block { border-bottom-color: #ff0000; }
