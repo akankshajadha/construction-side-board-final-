@@ -1,0 +1,112 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    background: #000000; 
+    color: #ffffff; 
+    font-family: 'Arial Black', 'Arial', sans-serif;
+    width: 160px; 
+    height: 160px; 
+    overflow: hidden;
+    user-select: none;
+    padding: 1px;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00ffff;
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+}
+
+.title {
+    color: #00ffff;
+    font-size: 8px;
+    font-weight: 900;
+    text-align: center;
+    padding: 2px 0;
+    background: #000000;
+    border-bottom: 1px solid #ffffff;
+    white-space: nowrap;
+}
+
+/* Flex layout automatically handles the massive center gap between elements */
+.datetime-block {
+    background: #000000;
+    padding: 3px 4px;
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between; 
+    color: #ffffff;
+    font-size: 6.5px; 
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.grid-table {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.grid-header, .grid-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #00ffff; 
+}
+
+.grid-header {
+    background: #000000;
+    height: 11px;
+    font-size: 6px; 
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.grid-row {
+    flex-grow: 1;
+}
+
+.grid-table .grid-row:last-child {
+    border-bottom: none;
+}
+
+.col-1 { width: 52%; text-align: left; padding-left: 2px; height: 100%; display: flex; align-items: center; }
+.col-2 { width: 22%; text-align: center; height: 100%; display: flex; align-items: center; justify-content: center; }
+.col-3 { width: 26%; text-align: center; height: 100%; display: flex; align-items: center; justify-content: center; }
+
+.border-right {
+    border-right: 1px solid #00ffff; 
+}
+
+.label-cell {
+    color: #ff3333; 
+    font-size: 5.5px; 
+    font-weight: bold;
+    letter-spacing: -0.2px;
+}
+
+.value-cell {
+    color: #00ff00; 
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.unit-cell {
+    color: #ff6600; 
+    font-size: 6.5px;
+    font-weight: bold;
+}
+
+body.offline-mode .main-container { border-color: #ff0000; }
+body.offline-mode .title { color: #ff0000; }
+body.offline-mode .datetime-block { border-bottom-color: #ff0000; }
+body.offline-mode .grid-header, body.offline-mode .grid-row { border-bottom-color: #ff0000; }
+body.offline-mode .border-right { border-right-color: #ff0000; }
