@@ -89,7 +89,7 @@ body {
 }
 
 .label-cell {
-    color: #ff3333; 
+    color: #ff6600; 
     font-size: 9.5px; 
     font-weight: bold;
     letter-spacing: -0.2px;
@@ -102,7 +102,7 @@ body {
 }
 
 .unit-cell {
-    color: #ff6600; 
+    color:#ff3333; 
     font-size: 8.5px;
     font-weight: bold;
 }
