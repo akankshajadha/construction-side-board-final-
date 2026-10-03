@@ -15,10 +15,11 @@ body {
     padding: 1px;
 }
 
+/* Outer frame border converted to white */
 .main-container {
     width: 100%;
     height: 100%;
-    border: 1px solid #00ffff;
+    border: 1px solid #ffffff;
     display: flex;
     flex-direction: column;
     background: #000000;
@@ -26,7 +27,7 @@ body {
 
 .title {
     color: #00ffff;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 900;
     text-align: center;
     padding: 2px 0;
@@ -43,7 +44,7 @@ body {
     display: flex;
     justify-content: space-between; 
     color: #ffffff;
-    font-size: 6.5px; 
+    font-size: 7.5px; 
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
@@ -55,17 +56,18 @@ body {
     flex-grow: 1;
 }
 
+/* Horizontal grid lines changed to solid white */
 .grid-header, .grid-row {
     display: flex;
     width: 100%;
     align-items: center;
-    border-bottom: 1px solid #00ffff; 
+    border-bottom: 1px solid #ffffff; 
 }
 
 .grid-header {
     background: #000000;
     height: 11px;
-    font-size: 6px; 
+    font-size: 8.5px; 
     color: #00ffff;
     font-weight: bold;
 }
@@ -82,29 +84,31 @@ body {
 .col-2 { width: 22%; text-align: center; height: 100%; display: flex; align-items: center; justify-content: center; }
 .col-3 { width: 26%; text-align: center; height: 100%; display: flex; align-items: center; justify-content: center; }
 
+/* Vertical column border lines changed to solid white */
 .border-right {
-    border-right: 1px solid #00ffff; 
+    border-right: 1px solid #ffffff; 
 }
 
 .label-cell {
-    color: #ff3333; 
-    font-size: 5.5px; 
-    font-weight: bold;
+    color: #ff6600; 
+    font-size: 8.5px; 
+    /* font-weight: bold; */
     letter-spacing: -0.2px;
 }
 
 .value-cell {
     color: #00ff00; 
     font-size: 9px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .unit-cell {
     color: #ff6600; 
-    font-size: 6.5px;
-    font-weight: bold;
+    font-size: 8.5px;
+    /* font-weight: bold; */
 }
 
+/* Offline state switches to high-contrast red warning borders */
 body.offline-mode .main-container { border-color: #ff0000; }
 body.offline-mode .title { color: #ff0000; }
 body.offline-mode .datetime-block { border-bottom-color: #ff0000; }
